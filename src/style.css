@@ -1,0 +1,446 @@
+:root {
+  --bg: #fff;
+  --dk: #000000;
+  --pr: #f64749;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background: var(--bg);
+  color: var(--dk);
+}
+/* Navigasi Start */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1.4rem 7%;
+}
+
+.main-nav .logo-nav {
+  font-size: 1.4rem;
+  color: var(--dk);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.main-nav .navi-nav a {
+  color: var(--dk);
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+.main-nav .navi-nav a:hover {
+  color: var(--pr);
+}
+.main-nav .navi-nav .login {
+  display: none;
+}
+
+.main-nav .extra-nav a {
+  color: var(--dk);
+  display: inline-block;
+  padding-right: 3rem;
+  transform: scale(0.8);
+}
+
+#login {
+  color: var(--dk);
+  background: var(--pr);
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+
+#login:hover {
+  transform: scale(1.1);
+}
+
+#hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin: 3.2rem 84%;
+  display: none;
+}
+
+.main-nav .bg-nav {
+  position: absolute;
+  top: 1rem;
+  right: 3.5rem;
+  z-index: -10;
+  width: 90%;
+  height: 10rem;
+  background-color: var(--pr);
+  border-radius: 2rem;
+  opacity: 0.1;
+}
+/* Navigasi End */
+
+/* Hero Start */
+.content {
+  padding: 1.4rem 7%;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+
+.hero .welcome h1 {
+  width: 20rem;
+  font-size: 47px;
+  font-weight: 700;
+}
+
+.hero .welcome p {
+  width: 30rem;
+  margin-top: 1rem;
+}
+.welcome .start {
+  background: var(--pr);
+  width: 170px;
+  height: 70px;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bg);
+  margin-top: 3rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+.welcome .start:hover {
+  transform: scale(1.1);
+}
+
+.welcome .wach img {
+  margin-bottom: 1rem;
+  margin-left: 15rem;
+  transform: scale(1.2);
+}
+
+.hero img {
+  margin-top: -30rem;
+  margin-left: 40rem;
+  transform: scale(0.8);
+}
+/* Hero End */
+
+/* Service Start */
+.service {
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.service .judul-serv {
+  text-align: center;
+  margin-top: 2rem;
+}
+.judul-serv h5 {
+  color: var(--pr);
+}
+
+.judul-serv h1 {
+  margin-top: 1rem;
+}
+.service .dilevery-img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.dilevery-img .card {
+  text-align: center;
+}
+.dilevery-img .card img {
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+.dilevery-img .both img {
+  color: #f64749;
+  margin-top: 4rem;
+}
+
+.dilevery-img .card h1 {
+  margin-top: 6rem;
+  font-weight: 700;
+}
+
+.dilevery-img .card p {
+  margin-top: 1rem;
+  font-size: small;
+}
+
+/* Service End */
+
+/* Menu Start */
+
+.our-menu {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 7rem;
+}
+
+.our-menu .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row .menu-card {
+  padding: 1rem 3%;
+  align-items: center;
+  margin-top: 3rem;
+}
+.row .menu-card img {
+  width: 10rem;
+  height: 12rem;
+  background-size: cover;
+  object-fit: contain;
+}
+.menu-card .menu-card-title {
+  margin-top: 1rem;
+  font-weight: 400;
+  border-bottom: 1px solid;
+}
+
+.menu-card .menu-card-price {
+  margin-top: 1rem;
+  color: var(--pr);
+  border-bottom: 1px solid;
+  width: 5rem;
+}
+/* Menu End */
+
+/* About Start */
+
+.about {
+  padding-top: 4.5rem;
+  margin-top: 5rem;
+}
+.about .row-about {
+  display: flex;
+}
+
+.about .row-about .about-img {
+  flex: 1 1 1.45rem;
+}
+
+.about .row-about .about-img img {
+  width: 80%;
+}
+
+.about .row-about .about-content {
+  flex: 0.5 1 1rem;
+  margin-left: 4rem;
+  margin-top: 5rem;
+}
+
+.about .row-about .about-content h5 {
+  color: var(--pr);
+}
+
+.about .row-about .about-content h1 {
+  color: var(--dk);
+  margin-top: 2rem;
+}
+
+.about .row-about .about-content p {
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+.about .row-about .about-content img {
+  margin-top: 5rem;
+}
+/* About End */
+.app {
+  padding-top: 7rem;
+  position: relative;
+}
+.row-app {
+  display: flex;
+}
+.row-app .app-card {
+  width: 35%;
+}
+
+.row-app .app-card h5 {
+  color: var(--pr);
+  letter-spacing: 0.6rem;
+}
+
+.row-app .app-card h1 {
+  margin-top: 1.2rem;
+  font-size: 2.5rem;
+}
+
+.row-app .app-card p {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.row-app .app-card button {
+  background: var(--pr);
+  color: var(--bg);
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+.row-app .app-contact {
+  padding-left: 3rem;
+}
+
+.row-app .app-contact .kotak {
+  background-color: var(--pr);
+  width: 8rem;
+  height: 9rem;
+  margin-top: 3rem;
+  padding-top: 1%;
+  border-radius: 1rem;
+}
+
+.row-app .app-contact .kotak .lingkaran {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--bg);
+  background-image: url(../img/Group\ 34.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 10% auto;
+}
+
+.row-app .app-contact img {
+  margin-top: 5rem;
+  margin-left: -8.5rem;
+}
+
+.row-app .app-contact .kotak p {
+  color: var(--bg);
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.row-app .catalog {
+  background: var(--bg);
+  width: 17rem;
+}
+.row-app .catalog img {
+  padding-left: 1rem;
+  margin-top: -4rem;
+}
+.app .bg {
+  background: var(--pr);
+  width: 100%;
+  height: 27.5rem;
+  position: absolute;
+  margin-top: -27rem;
+  opacity: 0.1;
+  border-radius: 2rem;
+  z-index: -10;
+}
+/* App End */
+
+/* Footer Start */
+.main-footer {
+  padding-top: 3rem;
+  padding: 1.4rem 7%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer a {
+  display: block;
+  color: var(--dk);
+  margin-top: 1rem;
+}
+.footer-logo {
+  font-size: 1.4rem;
+  width: 25%;
+}
+.footer-logo p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+footer .credit {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+footer .credit a {
+  color: var(--dk);
+  font-weight: 700;
+}
+
+/* Footer End */
+
+/* Tablet */
+
+@media (max-width: 750px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #login {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .main-nav .navi-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--pr);
+    width: 30rem;
+    height: 100vh;
+  }
+  .main-nav .navi-nav.active {
+    right: 0;
+  }
+  .main-nav .navi-nav a {
+    color: var(--dk);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .main-nav .navi-nav .login {
+    display: inline-block;
+  }
+  .main-nav .navi-nav a:hover {
+    color: #f64749;
+  }
+
+  .main-nav .logo-nav {
+    color: salmon;
+    margin-left: 35%;
+    font-size: 2.5rem;
+  }
+}
